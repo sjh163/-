@@ -107,7 +107,7 @@
             const formatNumber = (num) => num.toString().padStart(2, '0');
 
             return (
-                <div className="w-40 h-56 sm:w-48 sm:h-60 bg-white rounded-2xl shadow-lg border-2 border-orange-200 flex flex-col p-1.5">
+                <div className="w-48 h-64 sm:w-56 sm:h-72 bg-white rounded-2xl shadow-lg border-2 border-orange-200 flex flex-col p-1.5">
                     <div className="bg-[#a6c1a2] rounded-t-lg text-white font-bold text-center py-1.5 text-xs sm:text-sm flex items-center justify-around px-2">
                         <div className="w-1.5 h-4 bg-white/50 rounded-sm"></div>
                         <div className="w-1.5 h-4 bg-white/50 rounded-sm"></div>
@@ -117,17 +117,17 @@
                     </div>
                     <div className="flex-grow flex flex-col items-center justify-center bg-white rounded-b-lg border-t-4 border-orange-300 px-2 py-3">
                         <span 
-                            className="text-7xl sm:text-8xl font-bold text-[#85a782]" 
+                            className="text-8xl sm:text-9xl font-bold text-[#e45c4a]" 
                             style={{ textShadow: '3px 3px 0 #fef9e7' }}
                         >
                             {timeRemaining.days}
                         </span>
                          <span className="text-sm text-gray-500 -mt-2 mb-1">天</span>
-                        <div className="flex items-baseline justify-center space-x-1 text-gray-700 font-mono text-lg sm:text-xl">
+                        <div className="flex items-baseline justify-center space-x-1 text-[#e45c4a] font-mono text-2xl sm:text-3xl">
                             <span>{formatNumber(timeRemaining.hours)}</span>
-                            <span className="text-gray-500">:</span>
+                            <span>:</span>
                             <span>{formatNumber(timeRemaining.minutes)}</span>
-                            <span className="text-gray-500">:</span>
+                            <span>:</span>
                             <span>{formatNumber(timeRemaining.seconds)}</span>
                         </div>
                     </div>
@@ -148,12 +148,12 @@
                     <FishSwarm />
 
                     <main className="relative z-10 p-4 sm:p-8 w-full max-w-2xl mx-auto flex flex-col justify-between h-full min-h-screen">
-                        <div className="flex justify-between items-start pt-16 sm:pt-24">
+                        <div className="flex justify-between items-start pt-8 sm:pt-12">
                             <div className="flex flex-col text-6xl sm:text-8xl font-black text-gray-800 tracking-widest space-y-4" style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}>
-                                <span>一</span>
-                                <span>月</span>
-                                <span>开</span>
                                 <span>讲</span>
+                                <span>开</span>
+                                <span>月</span>
+                                <span>一</span>
                             </div>
                             <div className="relative mt-12 sm:mt-24">
                                 <div 
@@ -165,6 +165,25 @@
                                    <div className="border border-white/50 rounded-full w-4 h-4 mb-4"></div>
                                    <span className="text-2xl sm:text-3xl" style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}>43年</span>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div className="my-4 px-4 sm:px-0 flex-shrink">
+                            <div className="bg-white/60 backdrop-blur-sm p-4 sm:p-5 rounded-xl shadow-lg max-w-lg mx-auto border border-white/50">
+                                <h3 className="text-lg font-bold text-[#85a782] mb-2 flex items-center">
+                                    <span className="text-xl mr-2">🪴</span>生命语录
+                                </h3>
+                                <p className="text-gray-800 text-sm sm:text-base leading-relaxed">
+                                    现在的节点是非常重要的时期。哪怕只有一次传道做得好也不用费太多力气(人们）就会涌来。新天地会主管所有的基督教。所有教会也会终结。
+                                </p>
+                            </div>
+                            <div className="bg-white/60 backdrop-blur-sm p-4 sm:p-5 rounded-xl shadow-lg max-w-lg mx-auto border border-white/50 mt-4">
+                                <h3 className="text-lg font-bold text-[#85a782] mb-2 flex items-center">
+                                    <span className="text-xl mr-2">🪴</span>今日圣句
+                                </h3>
+                                <p className="text-gray-800 text-sm sm:text-base leading-relaxed">
+                                    但我们照他的应许，盼望新天新地，有义居在其中。(彼后3:13)
+                                </p>
                             </div>
                         </div>
 
